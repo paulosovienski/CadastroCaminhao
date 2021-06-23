@@ -1,0 +1,50 @@
+﻿@model Volvo.Models.Caminhao
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4 class="pb-5">Adicionar Caminhão</h4>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Modelo" class="control-label"></label>
+                @Html.DropDownList("Modelo", String.Empty)            
+                <span asp-validation-for="Modelo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ano" class="control-label"></label>
+                <input asp-for="Ano" type="number" class="form-control" value="@DateTime.Now.Year" readonly="readonly" />
+                <span asp-validation-for="Ano" class="text-danger"></span>
+            </div>
+          
+        <div class="form-group">
+            <label asp-for="AnoModelo" class="control-label"></label>
+            @Html.DropDownList("AnoModelo", String.Empty)           
+            <span asp-validation-for="AnoModelo" class="text-danger"></span>
+        </div>
+            <div class="form-group">
+                <label asp-for="Chassi" class="control-label"></label>
+                <input asp-for="Chassi" type="text" class="form-control" />
+                <span asp-validation-for="Chassi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Adicionar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar para lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
