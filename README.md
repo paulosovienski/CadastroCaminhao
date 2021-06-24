@@ -11,6 +11,7 @@ Sem isso não é possível garantir o funcionamento da aplicação.
 
 O sistema foi testado com os ambientes de homologação (Debug) do Visual Studio 2019:
 IIS Express e Kestrel.
+Foram realizados testes com os navegadores Google Chrome e Microsoft Edge, por favor utilize um desses navegadores.
 
 No momento do primeiro play caso apareça alguma caixa de diálogo clique em aceitar.
 
