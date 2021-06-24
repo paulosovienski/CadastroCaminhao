@@ -12,8 +12,7 @@ using Volvo.Models;
 namespace Volvo.Controllers
 {
     public class CaminhaoController : Controller
-    {
-       
+    {       
         //Construtor vazio para possibilitar o acesso dos testes unitários
         //Retirada a injeção de dependencia e instanciado o DBContext  Models.Caminhaocontext
         public CaminhaoController()
