@@ -10,7 +10,7 @@ Tenha em mente que o seu Visual Studio 2019 precisa ter o SDK correspondente.
 Sem isso não é possível garantir o funcionamento da aplicação.
 
 O sistema foi testado com os ambientes de homologação (Debug) do Visual Studio 2019:
-IIS Express ou Kestrel.
+IIS Express e Kestrel.
 
 No momento do primeiro play caso apareça alguma caixa de diálogo clique em aceitar.
 
@@ -19,6 +19,8 @@ Caso não funcionar de primeira em um webserver teste no outro, aqui funcionou n
 As dependências já estão todas embarcadas, não é necessário instalar nenhum pacote extra.
 O banco de dados é criado no início da aplicação.
 
+Testes:
+Só rode os testes depois de rodar a aplicação.
 Os testes unitarios aplicados aos métodos estão descritos acima de cada um.
 O projeto de testes segue junto e para rodar os testes basta clicar em testes, executar todos os teste.
 Caso haja alguma duvida, me chame no email: paulo.sovienski@gmail.com
