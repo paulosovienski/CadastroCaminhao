@@ -59,6 +59,9 @@ namespace Volvo
                     name: "default",
                     pattern: "{controller=Caminhao}/{action=Index}/{id?}");
             });
+
+            CaminhaoContext _dbContext = new CaminhaoContext();
+            _dbContext.Database.EnsureCreated();
         }
     }
 }
